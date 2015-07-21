@@ -32,7 +32,7 @@
     "sails-generate-ember-blueprints": "0.0.2",
     "sails-hook-dev": "git://github.com/balderdashy/sails-hook-dev",
     "sails-hook-eslint": "^1.0.1",
-    "sails-mongo": "^0.10.6"
+    "sails-redis": "^0.10.4"
   },
   "scripts": {
     "test-w": "mocha -R spec --ui bdd --watch ./tests/**/*-test.js",

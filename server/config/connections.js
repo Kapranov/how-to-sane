@@ -21,23 +21,19 @@
 
 module.exports.connections = {
 
-
-  /***************************************************************************
-  *                                                                          *
-  * MongoDB is the leading NoSQL database.                                   *
-  * http://en.wikipedia.org/wiki/MongoDB                                     *
-  *                                                                          *
-  * Run: npm install sails-mongo                                             *
-  *                                                                          *
-  ***************************************************************************/
-
-  mongo: {
-    adapter: 'sails-mongo',
+  redis: {
+    port: 6379,
     host: 'localhost',
-    port: 27017,
-    // user (email): 'email',
-    // password: 'password',
-    database: 'how-to-sane'
+    password: null,
+    database: 0,
+    options: {
+      parser: 'hiredis',
+      return_buffers: false,
+      detect_buffers: false,
+      socket_nodelay: true,
+      no_ready_check: false,
+      enable_offline_queue: true
+    }
   }
 
 };
