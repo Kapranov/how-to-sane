@@ -1,0 +1,38 @@
+{{outlet}}
+<div class="col-sm-6 col-xs-12">
+  <div class="row">
+    <div class="page-header">
+
+      <h3>Feed</h3>
+      {{#liquid-if address class="geo-info" }}
+        <h4>
+          {{#if address}}Address: {{address}}{{/if}}
+        </h4>
+        {{else}}
+          {{loading-bars size=40 color='grey'}}
+      {{/liquid-if}}
+    </div>
+  </div>
+
+  <div class="row">
+    {{#liquid-if showTopPanel class="geo-info" }}
+      {{component topPanel postStatus="postStatus" searchStatuses="searchStatuses" fromDate=fromDate showTopPanel=showTopPanel}}
+      {{else}}
+        <div class="pull-left">
+          <button {{action 'showStatusWizard'}} class="btn btn-info">Post Status</button>
+          <button {{action 'showSearchPanel'}} class="btn btn-info">Search</button>
+        </div>
+    {{/liquid-if}}
+  </div>
+  <div class="row">
+    {{#each model as |status|}}
+      {{status-card status=status}}
+    {{/each}}
+  </div>
+</div>
+<div class="col-sm-6 col-xs-12">
+  <div class="page-header">
+    <h3>Nearby</h3>
+  </div>
+  {{feed.nearby-places nearbyPlaces=nearbyPlaces}}
+</div>
