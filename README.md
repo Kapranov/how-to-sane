@@ -1,3 +1,4 @@
+Version Redis.
 
 <img src="https://camo.githubusercontent.com/b8ecf54b15f51c7c992d6fce003b661c96d8acec/68747470733a2f2f63646e2e7261776769742e636f6d2f6172746966696369616c696f2f73616e652f67682d70616765732f5f696e636c756465732f73616e652d6c6f676f2e737667" width="400"/>
 
@@ -60,6 +61,6 @@ If you have questions about this project, come to the chat for the SANE stack ht
 ### License
 How-to-SANE is [MIT Licensed](https://github.com/mgenev/how-to-sane/blob/master/LICENSE.md).
 
-Copyright (c) 2014 Gemini Connect LLC
+Copyright (c) 2015 Gemini Connect LLC
 
 [gitter-badge-url]: https://gitter.im/artificialio/sane?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
